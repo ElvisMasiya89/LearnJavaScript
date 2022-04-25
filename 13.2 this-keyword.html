@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="clickHandler(this)">Click Me</button>
+    <script>
+        function clickHandler(arg) {
+            console.log(arg);
+            //arg -> this that is passed referes to the DOM element in which this function is called
+            console.log(arg.innerText);
+
+            //'this' referers to the global object 'window' in which this fucntion  is called
+            console.log(this);
+        }
+    </script>
+</body>
+
+</html>
